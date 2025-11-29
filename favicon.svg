@@ -1,0 +1,50 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Подставка -->
+    <ellipse cx="32" cy="58" rx="14" ry="3" fill="#4a5568"/>
+    <path d="M 18 58 Q 18 52, 22 52 L 42 52 Q 46 52, 46 58" fill="#2d3748"/>
+    
+    <!-- Основание подставки -->
+    <ellipse cx="32" cy="60" rx="16" ry="2" fill="#2d3748" opacity="0.8"/>
+    
+    <!-- Кристальный шар -->
+    <circle cx="32" cy="32" r="18" fill="url(#ballGradient)" opacity="0.95"/>
+    <circle cx="32" cy="32" r="18" stroke="url(#ballStroke)" stroke-width="1.5" opacity="0.7"/>
+    
+    <!-- Внутреннее свечение -->
+    <ellipse cx="32" cy="26" rx="11" ry="14" fill="url(#innerGlow)" opacity="0.5"/>
+    <ellipse cx="29" cy="24" rx="6" ry="8" fill="url(#innerGlow)" opacity="0.7"/>
+    
+    <!-- Блики на шаре -->
+    <ellipse cx="26" cy="22" rx="5" ry="6" fill="white" opacity="0.4"/>
+    <ellipse cx="27" cy="20" rx="2.5" ry="3" fill="white" opacity="0.6"/>
+    
+    <!-- Магические частицы внутри -->
+    <circle cx="28" cy="30" r="1.2" fill="url(#particleGradient)" opacity="0.9"/>
+    <circle cx="34" cy="34" r="0.8" fill="url(#particleGradient)" opacity="0.7"/>
+    <circle cx="30" cy="36" r="1" fill="url(#particleGradient)" opacity="0.8"/>
+    <circle cx="36" cy="28" r="0.6" fill="url(#particleGradient)" opacity="0.6"/>
+    
+    <!-- Отражение света -->
+    <path d="M 22 26 Q 26 22, 30 26 Q 28 30, 24 30 Z" fill="white" opacity="0.25"/>
+    
+    <defs>
+        <linearGradient id="ballGradient" x1="25%" y1="25%" x2="75%" y2="75%">
+            <stop offset="0%" style="stop-color:#9333ea;stop-opacity:0.9" />
+            <stop offset="50%" style="stop-color:#a855f7;stop-opacity:0.95" />
+            <stop offset="100%" style="stop-color:#c084fc;stop-opacity:0.8" />
+        </linearGradient>
+        <linearGradient id="ballStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="innerGlow" x1="40%" y1="20%" x2="60%" y2="80%">
+            <stop offset="0%" style="stop-color:#c084fc;stop-opacity:0.7" />
+            <stop offset="100%" style="stop-color:#9333ea;stop-opacity:0.4" />
+        </linearGradient>
+        <radialGradient id="particleGradient" cx="50%" cy="50%">
+            <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.9" />
+        </radialGradient>
+    </defs>
+</svg>
+
